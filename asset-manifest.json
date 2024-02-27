@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/https.//VerinPavel.github.io/project/static/css/main.5e809c83.css",
-    "main.js": "/https.//VerinPavel.github.io/project/static/js/main.ee9409fd.js",
-    "static/media/people.webp": "/https.//VerinPavel.github.io/project/static/media/people.a7972b04616ad65a8b12.webp",
-    "static/media/BG.webp": "/https.//VerinPavel.github.io/project/static/media/BG.d67e812c18cee8d4a57e.webp",
-    "index.html": "/https.//VerinPavel.github.io/project/index.html",
-    "static/media/Frame-14.webp": "/https.//VerinPavel.github.io/project/static/media/Frame-14.79ea431342c97db1fc80.webp",
-    "static/media/dash.webp": "/https.//VerinPavel.github.io/project/static/media/dash.7f20d503b5bb033eebb0.webp",
-    "main.5e809c83.css.map": "/https.//VerinPavel.github.io/project/static/css/main.5e809c83.css.map",
-    "main.ee9409fd.js.map": "/https.//VerinPavel.github.io/project/static/js/main.ee9409fd.js.map"
+    "main.css": "/project/static/css/main.9439398e.css",
+    "main.js": "/project/static/js/main.ee9409fd.js",
+    "static/media/people.webp": "/project/static/media/people.a7972b04616ad65a8b12.webp",
+    "static/media/BG.webp": "/project/static/media/BG.d67e812c18cee8d4a57e.webp",
+    "index.html": "/project/index.html",
+    "static/media/Frame-14.webp": "/project/static/media/Frame-14.79ea431342c97db1fc80.webp",
+    "static/media/dash.webp": "/project/static/media/dash.7f20d503b5bb033eebb0.webp",
+    "main.9439398e.css.map": "/project/static/css/main.9439398e.css.map",
+    "main.ee9409fd.js.map": "/project/static/js/main.ee9409fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e809c83.css",
+    "static/css/main.9439398e.css",
     "static/js/main.ee9409fd.js"
   ]
 }
