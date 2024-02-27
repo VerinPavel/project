@@ -1,17 +1,28 @@
 {
   "files": {
     "main.css": "/project/static/css/main.9439398e.css",
-    "main.js": "/project/static/js/main.3c2e1ea8.js",
+    "main.js": "/project/static/js/main.fab1cbae.js",
     "static/media/people.webp": "/project/static/media/people.a7972b04616ad65a8b12.webp",
     "static/media/BG.webp": "/project/static/media/BG.d67e812c18cee8d4a57e.webp",
     "index.html": "/project/index.html",
+    "static/media/file.webp": "/project/static/media/file.82e8e83ca787f10a98f7.webp",
+    "static/media/percent.webp": "/project/static/media/percent.c1d7cb65a5bdf9312aed.webp",
+    "static/media/webMoney.webp": "/project/static/media/webMoney.8048202bf2eaa0aceb80.webp",
+    "static/media/search.webp": "/project/static/media/search.607bd5ff7b098048342b.webp",
+    "static/media/qiwi.webp": "/project/static/media/qiwi.c416a0bbc818d18c5b7f.webp",
+    "static/media/yandexMoney.webp": "/project/static/media/yandexMoney.1cf084232f8d55b0da47.webp",
+    "static/media/money.webp": "/project/static/media/money.6b62d47b762bd38a520b.webp",
+    "static/media/message.webp": "/project/static/media/message.478aba75a2609bd9ee9b.webp",
+    "static/media/document.webp": "/project/static/media/document.3b011f9335339744e03f.webp",
+    "static/media/mail.webp": "/project/static/media/mail.0ec8aa657c50d2d851d0.webp",
+    "static/media/vk.webp": "/project/static/media/vk.1aa98240ce76a535ac26.webp",
     "static/media/Frame-14.webp": "/project/static/media/Frame-14.79ea431342c97db1fc80.webp",
     "static/media/dash.webp": "/project/static/media/dash.7f20d503b5bb033eebb0.webp",
     "main.9439398e.css.map": "/project/static/css/main.9439398e.css.map",
-    "main.3c2e1ea8.js.map": "/project/static/js/main.3c2e1ea8.js.map"
+    "main.fab1cbae.js.map": "/project/static/js/main.fab1cbae.js.map"
   },
   "entrypoints": [
     "static/css/main.9439398e.css",
-    "static/js/main.3c2e1ea8.js"
+    "static/js/main.fab1cbae.js"
   ]
 }
