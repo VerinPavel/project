@@ -1,0 +1,133 @@
+@import '../../../Sass/mixins';
+@import '../../../Sass/variables.scss';
+
+.navigation {
+    display: none;
+
+    @include respond(tab-phone) {
+        display: block;
+    }
+
+    &__toggle {
+        display: none;
+    }
+
+    &__button {
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        top: 15px;
+        right: 75px;
+        z-index: 100;
+        text-align: center;
+        cursor: pointer;
+
+        @include respond(tab-phone) {
+            right: 30px;
+        }
+
+        @include respond(phone) {
+            right: 10px;
+        }
+    }
+
+    &__nav {
+        width: 100vw;
+        height: 100dvh;
+        background: rgba(16, 16, 29, 1);
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 80;
+        width: 0;
+        transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    }
+
+    &__list {
+        display: flex;
+        // Сделал чуть выше, потому что визуальный центр выше
+        height: 80%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 50px $m-20;
+    }
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+    font-size: 13px;
+    color: $color-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: $m-10 0;
+    transition: all 0.4s;
+    display: inline-block;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+    background-position: 100%;
+    color: $color-blue-header;
+}
+
+.navigation__toggle:checked ~ .navigation__background {
+    transform: scale(80);
+}
+
+.navigation__toggle:checked ~ .navigation__nav {
+    width: 100%;
+    opacity: 1;
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 20px;
+}
+
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+    width: 30px;
+    height: 0.2rem;
+    background: $color-blue-header;
+    display: inline-block;
+}
+
+.navigation__icon::before,
+.navigation__icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+}
+
+.navigation__icon::before {
+    top: -0.8rem;
+}
+
+.navigation__icon::after {
+    top: 0.8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+    top: 1rem;
+}
+
+.navigation__toggle:checked + .navigation__button .navigation__icon {
+    background: transparent;
+}
+
+.navigation__toggle:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation__toggle:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}

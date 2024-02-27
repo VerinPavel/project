@@ -1,0 +1,17 @@
+#system {
+    cursor: pointer;
+
+    &:focus {
+        background-color: #3d4050d9;
+        color: white;
+    }
+
+    option {
+        background-color: #272733;
+        color: white;
+    }
+
+    option:checked {
+        color: #42a9ed;
+    }
+}

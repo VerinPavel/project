@@ -1,0 +1,91 @@
+@import "../../Sass/mixins";
+@import "../../Sass/variables.scss";
+
+.section {
+  padding: 100px 375px 200px;
+  background-image: url(./people.webp);
+  background-size: cover;
+
+  @include respond(big-screen) {
+    padding: 100px 175px;
+  }
+
+  @include respond(tab-land) {
+    padding: 100px 75px;
+  }
+
+  @include respond(tab-phone) {
+    padding: 100px 30px;
+  }
+
+  @include respond(phone) {
+    padding: 100px 10px;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: $m-80;
+
+  @include respond(tab-phone) {
+    align-items: center;
+  }
+
+  h1 {
+    text-align: start;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include respond(tab-land) {
+      font-size: 36px;
+    }
+
+    @include respond(tab-phone) {
+      text-align: center;
+      font-size: 28px;
+    }
+    span {
+      font-weight: 800;
+      color: $color-blue-main;
+    }
+  }
+
+  &__desc {
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: $m-10;
+    }
+  }
+  &__list {
+    @include respond(tab-phone) {
+      padding: $m-40;
+    }
+
+    li {
+      text-align: start;
+      font-size: 20px;
+      font-weight: 400;
+      background: url(./dash.webp) no-repeat left center;
+      list-style-position: inside;
+      padding-left: 11px;
+      margin: $m-5 0;
+    }
+  }
+
+  &__btns {
+    width: 393px;
+    display: flex;
+    gap: $m-30;
+
+    @include respond(tab-phone) {
+      flex-direction: column;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}

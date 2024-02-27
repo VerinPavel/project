@@ -1,0 +1,60 @@
+@import "../../Sass/mixins";
+@import "../../Sass/variables.scss";
+
+.order {
+  background: url(./BG.webp);
+  padding: 120px 375px;
+
+  @include respond(big-screen) {
+    padding: 120px 175px;
+  }
+
+  @include respond(tab-land) {
+    padding: 120px 75px;
+  }
+
+  @include respond(tab-phone) {
+    padding: 100px 30px;
+  }
+
+  @include respond(phone) {
+    padding: 100px 10px;
+  }
+
+  &__container {
+    display: grid;
+    align-items: center;
+
+    @include respond(tab-land) {
+    }
+
+    h2 {
+      color: $color-white;
+      font-size: 36px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: $m-30;
+
+      @include respond(tab-land) {
+        font-size: 28px;
+      }
+
+      @include respond(tab-phone) {
+        font-size: 20px;
+      }
+
+      span {
+        color: $color-blue-main;
+
+        margin-left: 5px;
+      }
+    }
+
+    h6 {
+      color: $color-light-grey;
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: $m-80;
+    }
+  }
+}

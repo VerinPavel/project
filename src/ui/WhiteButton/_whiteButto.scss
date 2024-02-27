@@ -1,0 +1,24 @@
+@import '../../Sass/variables.scss';
+
+.whiteBtn {
+    width: 100%;
+    background-color: $color-white;
+    border: 1px solid $color-white-btn-border;
+    border-radius: 4px;
+    color: $color-white-btn-text;
+    padding: $m-15 31px;
+    transition: all 0.15s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-blue-main;
+        color: $color-white;
+        border: 1px solid $color-white;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+}

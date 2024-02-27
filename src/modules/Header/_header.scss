@@ -1,0 +1,79 @@
+@import "../../Sass/mixins";
+@import "../../Sass/variables.scss";
+
+header {
+  position: fixed;
+  top: 0;
+  max-width: 1920px;
+  width: 100vw;
+  z-index: 200;
+}
+
+.сontaner {
+  display: flex;
+  justify-content: space-between;
+  padding: $m-30 375px;
+  align-items: center;
+  background-color: rgba(16, 16, 29, 0.97);
+
+  @include respond(big-screen) {
+    padding: $m-30 175px;
+  }
+
+  @include respond(tab-land) {
+    padding: $m-30 75px;
+  }
+
+  @include respond(tab-phone) {
+    padding: $m-30;
+  }
+
+  @include respond(phone) {
+    padding: $m-30 10px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: start;
+    text-decoration: none;
+    color: $color-white;
+
+    @include respond(tab-land) {
+      font-size: 20px;
+    }
+
+    @include respond(tab-phone) {
+      font-size: 18px;
+    }
+
+    span {
+      color: $color-blue-title-header;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  column-gap: $m-60;
+  white-space: nowrap;
+
+  @include respond(tab-phone) {
+    display: none;
+  }
+
+  a {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $color-white;
+    cursor: pointer;
+    transition: all 400ms ease;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-blue-header;
+    }
+  }
+}

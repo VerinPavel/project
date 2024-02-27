@@ -1,0 +1,77 @@
+@import '../../Sass/mixins';
+@import '../../Sass/variables.scss';
+
+.footer {
+    display: flex;
+    column-gap: $m-40;
+    background-color: $color-footer;
+    padding: $m-30 375px;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1920px) {
+        flex-direction: column-reverse;
+        row-gap: $m-30;
+    }
+
+    @include respond(big-screen) {
+        padding: $m-30 175px;
+    }
+
+    @include respond(tab-land) {
+        padding: $m-30 75px;
+        row-gap: $m-40;
+    }
+
+    @include respond(tab-phone) {
+        padding: 30px;
+    }
+
+    @include respond(phone) {
+        padding: 30px 10px;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 400;
+        text-wrap: nowrap;
+        color: $color-white;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    &__contaner {
+        display: flex;
+        gap: $m-40;
+        justify-content: space-between;
+
+        @include respond(tab-land) {
+            gap: unset;
+        }
+
+        @include respond(tab-phone) {
+            flex-direction: column;
+            align-items: center;
+            gap: $m-30;
+        }
+    }
+
+    &__payment {
+        display: flex;
+        align-items: center;
+        color: $color-light-grey;
+        column-gap: $m-10;
+        font-size: 13px;
+        font-weight: 400;
+
+        @include respond(tab-phone) {
+            column-gap: $m-5;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-light-grey;
+        }
+    }
+}
